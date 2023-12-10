@@ -2,6 +2,7 @@ import React, { FC, useState } from "react";
 import '../../css.css'
 import { useEffect } from "react";
 
+
 interface Props {
     data: {
         Title: string
@@ -12,9 +13,7 @@ interface Props {
 const Details: FC<Props> =(props) =>{
 
     const [item, setItem] = useState(props.data)
-    useEffect(() => {
-        console.log(item)
-      }, []);
+    
     return(
         <div className="body">
         <div className="block">
