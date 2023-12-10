@@ -8,11 +8,6 @@ interface Props {
 
 const Card: FC<Props> = (props) => {
 
-    // const [item, setItem] = useState(props.data)
-    useEffect(() => {
-        console.log(props)
-        console.log(props.data)
-      }, []);
 
     return(
         <div className="card">
