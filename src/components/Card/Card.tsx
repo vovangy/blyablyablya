@@ -1,9 +1,13 @@
-import React, { FC, useState } from "react";
-import { useEffect } from "react";
-import image  from './1.png'
+import { FC } from "react";
 
 interface Props {
-  data: any[]
+  data: {
+    ID: number,
+    Title: string,
+    Rocket: string,
+    Image_url: string,
+    Type: string,
+  }
 }
 
 const Card: FC<Props> = (props) => {

@@ -1,4 +1,4 @@
-import React, { FC, useEffect, useState } from "react";
+import { FC, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import image from '../../components/Card/1.png'
 import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
@@ -24,9 +24,16 @@ const starships = [
 
 
 const DetailsPage: FC = () => {
-
+    const struct = {
+        ID: "",
+        Title: "",
+        Rocket: "",
+        Type: "",
+        Description: "",
+        Image_url: ""
+    }
     const {id} = useParams()
-    const [ship, setShip] = useState({})
+    const [ship, setShip] = useState(struct)
 
     useEffect(()=>{
         for (var i in starships){

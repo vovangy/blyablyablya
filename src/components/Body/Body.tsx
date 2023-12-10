@@ -1,5 +1,5 @@
-import React, { FC } from "react";
-import { useState, useEffect } from "react";
+import  { FC } from "react";
+import { useState } from "react";
 import Card from "../Card/Card";
 import search_img from './search.png'
 import Button from 'react-bootstrap/Button';
@@ -29,7 +29,7 @@ const starships = [
 ]
 
 const Body: FC = () => {
-    const [ships, setShips] = useState<any[]>(starships)
+    const ships = starships
     const [search, setSearch] = useState('')
 
     if (ships.length==0){

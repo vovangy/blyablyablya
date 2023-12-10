@@ -1,4 +1,3 @@
-import React from 'react'
 import {FC} from 'react'
 import StarshipsPage from './Pages/Starships/Starships.tsx'
 import DetailsPage from './Pages/Details/Details.tsx'

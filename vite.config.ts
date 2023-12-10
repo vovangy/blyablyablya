@@ -7,7 +7,11 @@ export default defineConfig({
     proxy:{
       '/api': 'http://localhost:8080',
     }
-    
   },
   plugins: [react()],
+  build: {
+    rollupOptions: {
+      input: 'src/index.html',
+    },
+  },
 })
