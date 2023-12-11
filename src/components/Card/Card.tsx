@@ -1,13 +1,10 @@
 import { FC } from "react";
 
 interface Props {
-  data: {
-    ID: number,
-    Title: string,
-    Rocket: string,
-    Image_url: string,
-    Type: string,
-  }
+  Image_url: string,
+  ID: number,
+  Type: string,
+  Title: string
 }
 
 const Card: FC<Props> = (props) => {
@@ -15,14 +12,14 @@ const Card: FC<Props> = (props) => {
 
     return(
         <div className="card">
-                <a href={"starships/"+props.data.ID} className="image_item">
-                    <img src={props.data.Image_url} alt={props.data.Image_url} className="image"/>
+                <a href={"starships/"+props.ID} className="image_item">
+                    <img src={props.Image_url} alt={props.Image_url} className="image"/>
                 </a>
                 <a href="" className="text_item">
-                    {props.data.Title}
+                    {props.Title}
                 </a>
                 <div className="discription">
-                    <div className="type">{props.data.Type}</div>
+                    <div className="type">{props.Type}</div>
                 </div>
             </div>
     )

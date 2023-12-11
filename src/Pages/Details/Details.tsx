@@ -24,16 +24,9 @@ const starships = [
 
 
 const DetailsPage: FC = () => {
-    const struct = {
-        ID: "",
-        Title: "",
-        Rocket: "",
-        Type: "",
-        Description: "",
-        Image_url: ""
-    }
+
     const {id} = useParams()
-    const [ship, setShip] = useState(struct)
+    const [ship, setShip] = useState({"Description":"", "Type":"", "Rocket":"", "Title":"", "Image_url":"", "ID":""})
 
     useEffect(()=>{
         for (var i in starships){

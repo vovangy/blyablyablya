@@ -12,8 +12,8 @@ const StartPage: FC = () => {
       <BrowserRouter>
         <Navigate/>
         <Routes>
-          <Route path='/starships' element={<StarshipsPage/>}/>
-          <Route path='/starships/:id' element={<DetailsPage/>}/>
+          <Route path='/blyablyablya/starships' element={<StarshipsPage/>}/>
+          <Route path='/blyablyablya/starships/:id' element={<DetailsPage/>}/>
         </Routes>
         <Footer/>
   </BrowserRouter>
