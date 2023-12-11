@@ -63,7 +63,7 @@ const DetailsPage: FC = () => {
                         </div>
                     </div>
                     <div className="mybtn">
-                        <a href="/starships" className="btn_back">Вернуться к списку</a>
+                        <a href="/blyablyablya/starships" className="btn_back">Вернуться к списку</a>
                     </div>
                 </div>
             </div>

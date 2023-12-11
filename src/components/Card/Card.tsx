@@ -12,7 +12,7 @@ const Card: FC<Props> = (props) => {
 
     return(
         <div className="card">
-                <a href={"starships/"+props.ID} className="image_item">
+                <a href={"/blyablyablya/starships/"+props.ID} className="image_item">
                     <img src={props.Image_url} alt={props.Image_url} className="image"/>
                 </a>
                 <a href="" className="text_item">

@@ -39,7 +39,7 @@ const Details: FC<Props> =(props) =>{
                         </div>
                     </div>
                     <div className="btn">
-                        <a href="/starships" className="btn_back">Вернуться к списку</a>
+                        <a href="/blyablyablya/starships" className="btn_back">Вернуться к списку</a>
                     </div>
                 </div>
             </div>

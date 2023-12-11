@@ -68,7 +68,7 @@ const Body = () => {
         <div className="block">
             <div className="mytop">
             <Breadcrumbs title="" id=""/>
-            <Form className="search" method="GET" role="search" action="/starships">
+            <Form className="search" method="GET" role="search" action="/blyablyablya/starships">
                 <Form.Group className="" controlId="formBasicEmail">
                     <Form.Control 
                     type="search" 
