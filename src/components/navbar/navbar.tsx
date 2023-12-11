@@ -27,7 +27,7 @@ function Navigate() {
     
     <Navbar expand="lg" className="mynavbar" data-bs-theme="dark" fixed='top'>
       <Container>
-      <Navbar.Brand href="/starships">
+      <Navbar.Brand href="/blyablyablya/starships">
             <img
               src={logo}
               width="100%"
@@ -39,7 +39,7 @@ function Navigate() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="/starships">Корабли</Nav.Link>
+            <Nav.Link href="/blyablyablya/starships">Корабли</Nav.Link>
             <Nav.Link href="#link">ПримерСсылки</Nav.Link>
           </Nav>
         </Navbar.Collapse>

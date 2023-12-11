@@ -1,5 +1,4 @@
-import React, { FC } from "react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Card from "../Card/Card";
 import search_img from './search.png'
 import Button from 'react-bootstrap/Button';
@@ -28,8 +27,9 @@ const starships = [
 	{"ID": 15,"Title": "Starship SN24", "Rocket":  "Super Heavy B7", "Type":  "Космический корабль", "Description": "Полностью многоразовая транспортная система, предназначенная для перевозки экипажа и грузов на околоземную орбиту, Луну и Марс. Для взлета с Земли необходима сверхтяжелая ракета-носитель. Корабль может осуществлять посадку и взлеты с Луны и Марса.", "Image_url": image},
 ]
 
-const Body: FC = () => {
-    const [ships, setShips] = useState<any[]>(starships)
+const Body = () => {
+    const ships = starships;
+    //const [ships, setShips] = useState<any[]>(starships)
     const [search, setSearch] = useState('')
 
     if (ships.length==0){
@@ -88,7 +88,7 @@ const Body: FC = () => {
             </div>
             <div className="card_container">
                 {ships.map((item) => (
-                    <Card data={item}/>
+                    <Card Image_url={item.Image_url} ID={item.ID} Title={item.Title} Type={item.Type}/>
                 ))}
             </div>
         </div>

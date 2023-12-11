@@ -1,6 +1,5 @@
-import { FC, useEffect } from 'react';
+import { FC } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Breadcrumb } from 'react-bootstrap';
 import './Breadcrumb.css'
 import { Link } from 'react-router-dom';
 import home from './home.png'

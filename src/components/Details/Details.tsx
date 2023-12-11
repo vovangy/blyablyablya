@@ -1,24 +1,24 @@
-import React, { FC, useState } from "react";
+import { FC } from "react";
 import '../../css.css'
-import { useEffect } from "react";
 
 
 interface Props {
     data: {
-        Title: string
+        Title: string,
+        Image_url: string
     }
   }
   
 
 const Details: FC<Props> =(props) =>{
 
-    const [item, setItem] = useState(props.data)
+    const item = props.data
     
     return(
         <div className="body">
         <div className="block">
             <div className="container">
-                <div className="photo"> <img className="image" src={item.} alt=""/></div>
+                <div className="photo"> <img className="image" src={item.Image_url} alt=""/></div>
                 <div className="text">
                     <div className="title">ОПИСАНИЕ ЗВЁЗДНОГО КОРАБЛЯ</div>
                     <div className="overview">
